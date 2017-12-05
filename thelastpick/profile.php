@@ -117,7 +117,7 @@ if(!isset($_SESSION["uid"])){
 				<div class  = "panel-heading">Reccomendations</div>
 					<div class = "panel-body">
 					  <?php
-					    $dbc = mysqli_connect('localhost','id3800351_krishna','Krishna12345','id3800351_ecomm') or die('Error');
+					    $dbc = mysqli_connect('us-cdbr-iron-east-05.cleardb.net','be9f3fe40ffe9f','c526a77a','id3800351_ecomm') or die('Error');
 					    $query= "SELECT * FROM `user_info` WHERE user_id = ".$_SESSION["uid"].";";
 					    $result = mysqli_query($dbc, $query);
 						while($row = mysqli_fetch_array($result)){
